@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salt.</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Fasthand&family=Freehand&display=swap" rel="stylesheet">
+    
+    <!-- Preconnects -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Salt Logo">
+        </div>
+        <nav>
+            <ul class="left-nav">
+                <li><a href="#products-section" onclick="navigateAndFilter('')">Everything</a></li>
+                <li><a href="#products-section" onclick="navigateAndFilter('Groceries')">Groceries</a></li>
+                <li><a href="#products-section" onclick="navigateAndFilter('Health')">Health</a></li>
+            </ul>
+            <ul class="right-nav">
+                <li><a href="#our-story">Our Story</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    <span class="cart-item-count">0</span>
+                </li>
+                <li><a href="#"><i class="fas fa-user"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Intro Section -->
+        <section class="intro">
+            <div class="intro-image">
+                <img src="img/salt.jpg" alt="Salt">
+                <img src="img/salt1.png" alt="Salt Bowl" class="salt-bowl">
+            </div>
+            <div class="intro-text">
+                <h1>"There must be something strangely sacred in salt. It is in our tears and in the sea." - Khalil Gibran.</h1>
+                <button class="shop-now-btn"><i class="fas fa-shopping-cart"></i> Shop Now</button>
+            </div>
+        </section>
+
+        <!-- Filter Selector -->
+        <div class="filter-container">
+        <label for="product-filter">Filter:</label>
+        <select id="product-filter">
+            <option value="">Everything</option>
+            <option value="Groceries">Groceries</option>
+            <option value="Health">Health</option>
+            <option value="Bestselling">Bestselling</option>
+            <option value="Trending">Trending</option>
+        </select>
+        </div>
+        <section id="products-section" class="products">
+            <!-- Products -->
+        </section>
+        <!-- Our Story -->
+        <section id="our-story" class="our-story-section">
+        <div class="story-content">
+            <div class="story-text">
+            <h2>Our Story</h2>
+            <p>
+                In the heart of Vietnam, a simple salt field ignited a spark that would grow into a passionate dream. Our journey began with a desire to bring the finest salts to the world, and over the years, it has evolved into something far greater....
+            </p>
+            <a class="read-more-btn">Read More</a>
+            </div>
+            <div class="story-image">
+            <img src="img/story.gif" alt="Our story image" />
+            </div>
+        </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="contact-container"></div>
+        <!-- Footer Content -->
+        <section id="contact" class="contact">
+            <div class="contact-left">
+                <h2>Find us at our exclusive location:</h2>
+                <p>
+                    15 Yemen Road<br>
+                    Yemen
+                </p>
+            </div>
+            <div class="contact-right">
+                <p>
+                    Made by <a href="https://github.com/sophieschaesberg" target="_blank">Sophie</a> 😊
+                </p>
+            </div>
+        </section>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+    <div class="cart-modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Your Cart</h2>
+        <div class="cart-items">
+        <!-- Cart Items -->
+        </div>
+        <div class="cart-summary">
+        <p>Total: <span class="cart-total">$0.00</span></p>
+        <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
+
+
+
