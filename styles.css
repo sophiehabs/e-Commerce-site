@@ -26,6 +26,10 @@ header {
   align-items: center;
   padding: 20px;
   background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .logo img {
@@ -79,6 +83,7 @@ nav .fas {
   align-items: center;
   background-color: #ffffff;
   padding: 50px;
+  margin-top: 100px;
 }
 
 .intro-image img {

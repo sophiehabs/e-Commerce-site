@@ -155,6 +155,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const productsSection = document.getElementById("products-section");
     productsSection.scrollIntoView({ behavior: "smooth" });
   });
+
+  // Add event listener for the logo
+  const logo = document.getElementById("logo");
+  logo.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 });
 
 // Function to open the cart modal
@@ -276,6 +283,9 @@ function updateCartItemCount() {
   const cartSize = cart.reduce((acc, item) => acc + item.quantity, 0);
   cartItemCount.textContent = cartSize;
 }
+
+
+
 
 
 
