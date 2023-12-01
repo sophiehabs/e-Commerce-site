@@ -6,7 +6,7 @@ A modern, responsive e-commerce website built with HTML, CSS, and JavaScript.
 
 This e-commerce site showcases a variety of salt products and allows users to filter products based on their category, add items to the shopping cart and view their cart.
 
-Link to the live project here: [https://sophiehabs.github.io/e-Commerce-site/] (https://sophiehabs.github.io/e-Commerce-site/)
+Link to the live project here: https://sophiehabs.github.io/e-Commerce-site/
 
 ## Technical Details
 
